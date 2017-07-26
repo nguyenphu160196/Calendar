@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	/*overflow: hidden;*/
+	overflow-x: hidden;
+}
+
+tr{
+	cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;   
+    margin: 0px;
+    font-size: 30px;
+}
+
+button{
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 40px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.header{
+	background-color: #4286f4;
+	height: 162px;
+}
+
+.content{
+	background-color: #eff3f9;
+	float: left;
+	min-height: 500px;
+	width: calc(100%/1.5);
+	
+}
+
+.year-month{
+	font-size: 100px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.next-prev{
+	display: flex;
+	justify-content: center;
+}
+
+.month{
+	padding-right: 30px;
+}
+
+.month:hover{
+	color: #ffffff;
+	opacity: 0.5;
+	cursor:pointer;
+}
+.year:hover{
+	color: #ffffff;
+	opacity: 0.5;
+	cursor:pointer;
+}
+
+button:hover{
+	cursor:pointer;
+	background-color: #4286f4;
+	opacity: 0.5;
+}
+
+.old-month{
+	opacity: 0.5;
+}
+
+.chart-field{
+	background-color: #001b47;
+	float: left;
+	min-height: 500px;
+	width: calc(100%/3);
+}
+
+.year-picker{
+	display: none;
+	background-color: lightgrey;
+	position: absolute;
+	top: 99px;
+	right: 114px;
+	height: 200px;
+	z-index: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.month-picker{
+	position: absolute;
+	top: 99px;
+	display: none;
+	background-color: lightgrey;
+	height: 200px;
+	left: 114px;
+	z-index: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.m{
+	color: #ffffff;
+	font-size: 30px;
+	padding: 10px;
+}
+.m:hover{
+	border: #ffffff solid 3px;	
+	cursor:pointer;
+}
+.y{
+	color: #ffffff;
+	font-size: 25px;
+	padding: 10px;
+}
+.y:hover{
+	cursor:pointer;
+	border: #ffffff solid 3px;	
+}
+
+.day{
+	display: flex;
+	flex-wrap: wrap;
+}
+#day{
+	width: 100%;
+}
+td{
+	width: calc(100%/7);
+	vertical-align: top;
+	text-align: left;
+}
+td:hover{
+	background-color: lightgrey;
+}
+
+.pop-up{
+	display: none;
+	overflow-x: hidden;
+	overflow-y: scroll; 
+	width: 20%;
+	padding: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.test{
+	font-size:20px;
+	text-align:right; 
+	padding-right: 10px;
+	margin-bottom: 3px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.total{
+	position: absolute;
+	bottom: 30px;
+	left: 950px;
+	color: white;
+	font-size: 30px;
+}
+.date{
+	position: absolute;
+	top: 188px;
+	right: 100px;
+	color: white;
+	font-size: 30px;
+}
+
+.svg{
+	z-index: 2;
+	position: absolute;
+	top: 200px;
+	right:100px;
+}

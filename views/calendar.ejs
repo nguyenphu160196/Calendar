@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="xuly.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div class="container">
+			<div class="month-picker col-3">
+			</div>
+			<div class="year-picker col-3">
+			</div>
+		<div class="header col-12">
+			<div class="year-month">
+				<div class="month">0</div>
+				<div class="year">0</div>
+			</div>
+			<div class="next-prev">
+				<button id="prev-week"><</button>
+				<button id="next-week">></button>
+			</div>
+		</div>
+		<div class="content">
+			<div class="day">
+				<table id="day"	>
+					<tr></tr>
+				</table>
+				<form class="pop-up">
+					<label>Thêm tiền tiêu vặt cho ngày: 
+					</label>
+				</form>
+			</div>
+		</div>
+		<div class="chart-field">
+			<canvas class="canvas" width="455" height="500"></canvas>
+		</div>
+		<div class="date"></div>
+		<div class="total"></div>
+	</div>
+</body>
+</html>
